@@ -1,18 +1,18 @@
 class CountStationModel {
-  final int totalStation;
-  final int offline;
-  final int online;
-  final int totalAwlr;
-  final int totalArr;
-  final int totalAws;
-  final int totalAwlrArr;
-  final int totalVNotch;
-  final int totalFM;
-  final int totalAVWR;
-  final int totalWQ;
-  final int totalOrganization;
+  int totalStation;
+  int offline;
+  int online;
+  int totalAwlr;
+  int totalArr;
+  int totalAws;
+  int totalAwlrArr;
+  int totalVNotch;
+  int totalFM;
+  int totalAVWR;
+  int totalWQ;
+  int totalOrganization;
 
-  const CountStationModel({
+  CountStationModel({
     this.totalStation = 0,
     this.offline = 0,
     this.online = 0,
@@ -28,7 +28,7 @@ class CountStationModel {
   });
 
   factory CountStationModel.fromJson(Map<String, dynamic>? json) {
-    if (json == null) return const CountStationModel();
+    if (json == null) return CountStationModel();
 
     return CountStationModel(
       totalStation: json['totalStation'] ?? 0,

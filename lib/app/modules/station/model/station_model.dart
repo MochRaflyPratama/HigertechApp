@@ -1,70 +1,70 @@
 class StationModel {
-  final String? id;
-  final String? slug;
-  final String? organizationCode;
-  final String? balaiName;
-  final String? photo;
-  final String? subDomain;
-  final String? subDomainOld;
-  final String? noRegister;
-  final String? name;
-  final String? stationType;
-  final String? type;
-  final int? elevation;
-  final double? latitude;
-  final double? longitude;
-  final String? riverAreaId;
-  final String? watershedId;
-  final String? provinceId;
-  final String? regencyId;
-  final String? districtId;
-  final String? villageId;
-  final String? builtYear;
-  final String? builtBy;
-  final String? renovationYear;
-  final String? renovationBy;
-  final String? note;
-  final String? createdAt;
-  final String? createdBy;
-  final String? updatedAt;
-  final String? updatedBy;
-  final String? deletedAt;
-  final String? deletedBy;
-  final String? deviceId;
-  final String? noGsm;
-  final String? installedDate;
-  final String? calibration;
-  final String? brandCode;
-  final String? brandName;
-  final String? riverAreaName;
-  final String? watershedName;
-  final String? provinceName;
-  final String? regencyName;
-  final String? districtName;
-  final String? villageName;
-  final String? unitDisplay;
-  final String? unitSensor;
-  final double? peilschaalBasisValue;
-  final double? peilschaalBasisElevation;
-  final double? konstantaA;
-  final double? konstantaB;
-  final double? siaga1;
-  final double? siaga2;
-  final double? siaga3;
-  final double? heightMercu;
-  final String? lastReadingAt;
-  final String? deviceStatus;
-  final String? username;
-  final String? password;
-  final String? warningStatus;
-  final double? waterLevel;
+  final dynamic id;
+  final dynamic slug;
+  final dynamic organizationCode;
+  final dynamic balaiName;
+  final dynamic photo;
+  final dynamic subDomain;
+  final dynamic subDomainOld;
+  final dynamic noRegister;
+  final dynamic name;
+  final dynamic stationType;
+  final dynamic type;
+  final dynamic elevation;
+  final dynamic latitude;
+  final dynamic longitude;
+  final dynamic riverAreaId;
+  final dynamic watershedId;
+  final dynamic provinceId;
+  final dynamic regencyId;
+  final dynamic districtId;
+  final dynamic villageId;
+  final dynamic builtYear;
+  final dynamic builtBy;
+  final dynamic renovationYear;
+  final dynamic renovationBy;
+  final dynamic note;
+  final dynamic createdAt;
+  final dynamic createdBy;
+  final dynamic updatedAt;
+  final dynamic updatedBy;
+  final dynamic deletedAt;
+  final dynamic deletedBy;
+  final dynamic deviceId;
+  final dynamic noGsm;
+  final dynamic installedDate;
+  final dynamic calibration;
+  final dynamic brandCode;
+  final dynamic brandName;
+  final dynamic riverAreaName;
+  final dynamic watershedName;
+  final dynamic provinceName;
+  final dynamic regencyName;
+  final dynamic districtName;
+  final dynamic villageName;
+  final dynamic unitDisplay;
+  final dynamic unitSensor;
+  final dynamic peilschaalBasisValue;
+  final dynamic peilschaalBasisElevation;
+  final dynamic konstantaA;
+  final dynamic konstantaB;
+  final dynamic siaga1;
+  final dynamic siaga2;
+  final dynamic siaga3;
+  final dynamic heightMercu;
+  final dynamic lastReadingAt;
+  final dynamic deviceStatus;
+  final dynamic username;
+  final dynamic password;
+  final dynamic warningStatus;
+  final dynamic waterLevel;
   final dynamic awlrLastReading;
-  final double? rainfall;
-  final double? rainfallLastHour;
-  final double? rainfallLastDay;
-  final double? rainfallMax;
-  final double? intensityLastHour;
-  final double? intensityLastDay;
+  final dynamic rainfall;
+  final dynamic rainfallLastHour;
+  final dynamic rainfallLastDay;
+  final dynamic rainfallMax;
+  final dynamic intensityLastHour;
+  final dynamic intensityLastDay;
   final dynamic arrLastReading;
 
   StationModel({
@@ -150,8 +150,8 @@ class StationModel {
         stationType: json['stationType'],
         type: json['type'],
         elevation: json['elevation'],
-        latitude: (json['latitude'] as num?)?.toDouble(),
-        longitude: (json['longitude'] as num?)?.toDouble(),
+        latitude: json['latitude'],
+        longitude: json['longitude'],
         riverAreaId: json['riverAreaId'],
         watershedId: json['watershedId'],
         provinceId: json['provinceId'],
@@ -183,98 +183,27 @@ class StationModel {
         villageName: json['villageName'],
         unitDisplay: json['unitDisplay'],
         unitSensor: json['unitSensor'],
-        peilschaalBasisValue: (json['peilschaalBasisValue'] as num?)?.toDouble(),
-        peilschaalBasisElevation:
-            (json['peilschaalBasisElevation'] as num?)?.toDouble(),
-        konstantaA: (json['konstantaA'] as num?)?.toDouble(),
-        konstantaB: (json['konstantaB'] as num?)?.toDouble(),
-        siaga1: (json['siaga1'] as num?)?.toDouble(),
-        siaga2: (json['siaga2'] as num?)?.toDouble(),
-        siaga3: (json['siaga3'] as num?)?.toDouble(),
-        heightMercu: (json['heightMercu'] as num?)?.toDouble(),
+        peilschaalBasisValue: json['peilschaalBasisValue'],
+        peilschaalBasisElevation: json['peilschaalBasisElevation'],
+        konstantaA: json['konstantaA'],
+        konstantaB: json['konstantaB'],
+        siaga1: json['siaga1'],
+        siaga2: json['siaga2'],
+        siaga3: json['siaga3'],
+        heightMercu: json['heightMercu'],
         lastReadingAt: json['lastReadingAt'],
         deviceStatus: json['deviceStatus'],
         username: json['username'],
         password: json['password'],
         warningStatus: json['warningStatus'],
-        waterLevel: (json['waterLevel'] as num?)?.toDouble(),
+        waterLevel: json['waterLevel'],
         awlrLastReading: json['awlrLastReading'],
-        rainfall: (json['rainfall'] as num?)?.toDouble(),
-        rainfallLastHour: (json['rainfallLastHour'] as num?)?.toDouble(),
-        rainfallLastDay: (json['rainfallLastDay'] as num?)?.toDouble(),
-        rainfallMax: (json['rainfallMax'] as num?)?.toDouble(),
-        intensityLastHour: (json['intensityLastHour'] as num?)?.toDouble(),
-        intensityLastDay: (json['intensityLastDay'] as num?)?.toDouble(),
+        rainfall: json['rainfall'],
+        rainfallLastHour: json['rainfallLastHour'],
+        rainfallLastDay: json['rainfallLastDay'],
+        rainfallMax: json['rainfallMax'],
+        intensityLastHour: json['intensityLastHour'],
+        intensityLastDay: json['intensityLastDay'],
         arrLastReading: json['arrLastReading'],
       );
-
-  Map<String, dynamic> toJson() => {
-        'id': id,
-        'slug': slug,
-        'organizationCode': organizationCode,
-        'balaiName': balaiName,
-        'photo': photo,
-        'subDomain': subDomain,
-        'subDomainOld': subDomainOld,
-        'noRegister': noRegister,
-        'name': name,
-        'stationType': stationType,
-        'type': type,
-        'elevation': elevation,
-        'latitude': latitude,
-        'longitude': longitude,
-        'riverAreaId': riverAreaId,
-        'watershedId': watershedId,
-        'provinceId': provinceId,
-        'regencyId': regencyId,
-        'districtId': districtId,
-        'villageId': villageId,
-        'builtYear': builtYear,
-        'builtBy': builtBy,
-        'renovationYear': renovationYear,
-        'renovationBy': renovationBy,
-        'note': note,
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        'updatedAt': updatedAt,
-        'updatedBy': updatedBy,
-        'deletedAt': deletedAt,
-        'deletedBy': deletedBy,
-        'deviceId': deviceId,
-        'noGsm': noGsm,
-        'installedDate': installedDate,
-        'calibration': calibration,
-        'brandCode': brandCode,
-        'brandName': brandName,
-        'riverAreaName': riverAreaName,
-        'watershedName': watershedName,
-        'provinceName': provinceName,
-        'regencyName': regencyName,
-        'districtName': districtName,
-        'villageName': villageName,
-        'unitDisplay': unitDisplay,
-        'unitSensor': unitSensor,
-        'peilschaalBasisValue': peilschaalBasisValue,
-        'peilschaalBasisElevation': peilschaalBasisElevation,
-        'konstantaA': konstantaA,
-        'konstantaB': konstantaB,
-        'siaga1': siaga1,
-        'siaga2': siaga2,
-        'siaga3': siaga3,
-        'heightMercu': heightMercu,
-        'lastReadingAt': lastReadingAt,
-        'deviceStatus': deviceStatus,
-        'username': username,
-        'password': password,
-        'warningStatus': warningStatus,
-        'waterLevel': waterLevel,
-        'awlrLastReading': awlrLastReading,
-        'rainfall': rainfall,
-        'rainfallLastHour': rainfallLastHour,
-        'rainfallLastDay': rainfallLastDay,
-        'rainfallMax': rainfallMax,
-        'intensityLastHour': intensityLastHour,
-        'intensityLastDay': intensityLastDay,
-        'arrLastReading': arrLastReading,
-      };
 }

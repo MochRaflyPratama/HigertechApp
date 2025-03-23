@@ -1,7 +1,7 @@
 import 'package:higertechapp/app/modules/station/model/station_model.dart';
 import 'package:higertechapp/app/service/api_service.dart';
 
-class HomeRepository {
+class StationRepository {
   final ApiService _apiService = ApiService();
 
   Future<List<StationModel>> fetchStationList() async {
